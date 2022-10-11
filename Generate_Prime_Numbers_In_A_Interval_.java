@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Generate
+class Pri
 {
     public static boolean isprime(int x)
     {
@@ -17,7 +17,7 @@ class Generate
         }
         if(count==0)
         {
-           return true; 
+            return true;
         }
         else
         {
@@ -27,18 +27,15 @@ class Generate
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int a,b,d;
+        int a,b,c=0;
         a=sc.nextInt();
         b=sc.nextInt();
         for(int i=a;i<=b;i++)
         {
-           if(isprime(i))
-           {
-               d=i;
-               System.out.println(d);
-           }
-            
+            if(isprime(i))
+            {
+               System.out.println(i); 
+            }
         }
-        
     }
 }
