@@ -1,24 +1,23 @@
 import java.util.Scanner;
 class Uni
 {
-    public static boolean isunique(int x)
+    public static boolean uninum(int x)
     {
         int r;
         while(x>0)
         {
             r=x%10;
             x=x/10;
-            int x1,r2;
+            int x1,r1;
             x1=x;
             while(x1>0)
             {
-                r2=x1%10;
+                r1=x1%10;
                 x1=x1/10;
-                if(r==r2)
+                if(r==r1)
                 {
                     return false;
                 }
-                
             }
         }
         return true;
@@ -29,7 +28,7 @@ class Uni
         int n;
         boolean d;
         n=sc.nextInt();
-        d=isunique(n);
+        d=uninum(n);
         if(d==true)
         {
             System.out.println("Unique Number");
@@ -38,6 +37,5 @@ class Uni
         {
             System.out.println("Not Unique Number");
         }
-        
     }
 }
